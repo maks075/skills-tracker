@@ -30,7 +30,7 @@ public class SkillsController {
 public String form() {
         return "<html>" +
                 "<body>" +
-                "<form method='post'>" +
+                "<form method='post' action='results'>" +
                 "<label>Name:</label><br /><input type='text' name='name'><br />" +
                 "<label>My first language of choice:<br>" +
                 "<select name='firstlang'>" +
@@ -56,7 +56,7 @@ public String form() {
                 "</html>";
 }
 
-    @PostMapping("form")
+    @PostMapping("results")
     @ResponseBody
     public String respondToFormSubmision(@RequestParam String name, @RequestParam String firstlang, @RequestParam String secondlang, @RequestParam String thirdlang) {
         return "<html>" +
