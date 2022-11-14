@@ -30,7 +30,7 @@ public class SkillsController {
 public String form() {
         return "<html>" +
                 "<body>" +
-                "<form method='post'>" +  
+                "<form method='post'>" +
                 "<label>Name:</label><br /><input type='text' name='name'><br />" +
                 "<label>My first language of choice:<br>" +
                 "<select name='firstlang'>" +
@@ -62,11 +62,14 @@ public String form() {
         return "<html>" +
                 "<body>" +
                 "<h1>" + name + "</h1>" +
-                "<ol>" +
-                "<li>" + firstlang + "</li>" +
-                "<li>" + secondlang + "</li>" +
-                "<li>" + thirdlang + "</li>" +
-                "</ol>" +
+                "<table>" +
+                "<tr><th>First language</th>" +
+                "<th>Second language</th>" +
+                "<th>Third language</th></tr>" +
+                "<tr><td>" + firstlang + "</td>" +
+                "<td>" + secondlang + "</td>" +
+                "<td>" + thirdlang + "</td></tr>" +
+                "</table>" +
                 "</body>" +
                 "</html>";
     }
