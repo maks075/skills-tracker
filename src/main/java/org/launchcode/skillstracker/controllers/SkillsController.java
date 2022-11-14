@@ -30,7 +30,7 @@ public class SkillsController {
 public String form() {
         return "<html>" +
                 "<body>" +
-                "<form method='post'>" +  //submit a request to /hello
+                "<form method='post'>" +  
                 "<label>Name:</label><br /><input type='text' name='name'><br />" +
                 "<label>My first language of choice:<br>" +
                 "<select name='firstlang'>" +
